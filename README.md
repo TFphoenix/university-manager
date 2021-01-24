@@ -2,7 +2,7 @@
 # MIP (Programming Environments and Tools)<br>2019 Project
 
 ## General information
-This is an application realized using JavaFX for the "Programming Environments and Tools" subject project in my second university year at Transylvania University of Brașov, Romania (2019).
+This is my first application realized using JavaFX. It was made for the "Programming Environments and Tools" subject project in my second university year at Transylvania University of Brașov, Romania (2019).
 
 ## Purpose
 The purpose was to realize a desktop application meant to handle most of the general functionalities needed into an university by a student, professor, secretary and administrator (ie. managing grades, seeing personal info, offering scholarships, etc.). For this project Java language was a requirement. We also needed to use a database provider in order to ensure persistency.
