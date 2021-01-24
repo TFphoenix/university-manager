@@ -22,6 +22,7 @@ The purpose was to realize a desktop application meant to handle most of the gen
 - **dao & daoimpl**: Data Access Object interfaces and implementations
 - **entities**: entities/models of the project
 - **gui**: gui elements
+	- **primitives**: primitive components like alert boxes, dialogs, etc.
 	- **view.fxml**: the proper views (as .fxml files)
 	- **controller.java**: classes that control behavior and handle view events
 	- **icons**: icons used in the GUI (as .png files)
