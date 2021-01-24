@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sessions.studentmenu.situatie.SituatieController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="materieColumn" prefWidth="75.0" text="Materie" />
+          <TableColumn fx:id="crediteColumn" prefWidth="75.0" text="Credite" />
+            <TableColumn fx:id="profesorColumn" prefWidth="75.0" text="Profesor" />
+            <TableColumn fx:id="statusColumn" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="notaColumn" prefWidth="75.0" text="Notă" />
+            <TableColumn fx:id="dataNotariiColumn" prefWidth="75.0" text="Data notării" />
+            <TableColumn fx:id="anColumn" prefWidth="75.0" text="An" />
+            <TableColumn fx:id="semestruColumn" prefWidth="75.0" text="Semestru" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Vizualizare">
+               <items>
+                  <RadioMenuItem fx:id="generalView" mnemonicParsing="false" onAction="#onGeneralView" text="Generală" />
+                  <RadioMenuItem fx:id="selectiveView" mnemonicParsing="false" onAction="#onSelectiveView" text="Selectivă" />
+               </items>
+          </Menu>
+          <Menu fx:id="yearMenu" mnemonicParsing="false" text="An">
+               <items>
+                  <CheckMenuItem fx:id="year1" mnemonicParsing="false" onAction="#updateTableView" text="Anul 1" />
+                  <CheckMenuItem fx:id="year2" mnemonicParsing="false" onAction="#updateTableView" text="Anul 2" />
+                  <CheckMenuItem fx:id="year3" mnemonicParsing="false" onAction="#updateTableView" text="Anul 3" />
+                  <CheckMenuItem fx:id="year4" mnemonicParsing="false" onAction="#updateTableView" text="Anul 4" />
+               </items>
+          </Menu>
+          <Menu fx:id="semesterMenu" mnemonicParsing="false" text="Semestru">
+               <items>
+                  <CheckMenuItem fx:id="semester1" mnemonicParsing="false" onAction="#updateTableView" text="Semestrul 1" />
+                  <CheckMenuItem fx:id="semester2" mnemonicParsing="false" onAction="#updateTableView" text="Semestrul 2" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Medie:" />
+            <Label fx:id="medieLabel" text="9.52">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Text layoutX="10.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restanțe:">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Text>
+            <Label fx:id="restanteLabel" layoutX="46.0" layoutY="10.0" text="0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Text layoutX="120.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nenotate:">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Text>
+            <Label fx:id="nenotateLabel" layoutX="169.0" layoutY="10.0" text="0">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

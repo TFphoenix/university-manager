@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="mip_unitbvapp@localhost" uuid="7abdfe75-b324-4b09-a3af-79d556cd2557">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/mip_unitbvapp</jdbc-url>
+      <time-zone>Etc/GMT+2</time-zone>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sessions.secretarymenu.catalog.CatalogController">
+    <center>
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="disciplinaColumn" minWidth="240.0" prefWidth="240.0" text="Disciplină" />
+                <TableColumn fx:id="notaColumn" minWidth="50.0" prefWidth="50.0" text="Notă" />
+                <TableColumn fx:id="dataNotariiColumn" minWidth="100.0" prefWidth="100.0" text="Data notării" />
+                <TableColumn fx:id="grupaColumn" minWidth="100.0" prefWidth="100.0" text="Grupă" />
+                <TableColumn fx:id="studentColumn" minWidth="150.0" prefWidth="150.0" text="Student" />
+            <TableColumn fx:id="profesorColumn" minWidth="150.0" prefWidth="150.0" text="Profesor" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

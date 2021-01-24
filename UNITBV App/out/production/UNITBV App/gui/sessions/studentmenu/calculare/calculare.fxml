@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="50.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sessions.studentmenu.calculare.CalculareController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ȘANSE">
+         <font>
+            <Font name="Lato Black" size="30.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#cfba00" />
+                  <Stop color="#bf8c00" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Region VBox.vgrow="ALWAYS">
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Region>
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ȘANSE REALE:">
+               <font>
+                  <Font name="Lato Light" size="15.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.4418604651162791">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#bd0000" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="sanseRealeLabel" text="Label">
+               <font>
+                  <Font name="Lato Black" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ȘANSE POTENȚIALE:">
+               <font>
+                  <Font name="Lato Light" size="15.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.4418604651162791">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#b900bd" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="sansePotentialeLabel" text="Label">
+               <font>
+                  <Font name="Lato Black" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PREDICȚIE:">
+               <font>
+                  <Font name="Lato Light" size="15.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.4418604651162791">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#006dbd" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="predictieLabel" text="Label">
+               <font>
+                  <Font name="Lato Black" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Region VBox.vgrow="ALWAYS">
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Region>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

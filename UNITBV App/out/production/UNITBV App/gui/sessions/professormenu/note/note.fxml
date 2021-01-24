@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sessions.professormenu.note.NoteController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="disciplinaColumn" minWidth="300.0" prefWidth="300.0" text="Disciplină" />
+            <TableColumn fx:id="notaColumn" minWidth="50.0" prefWidth="50.0" text="Notă" />
+            <TableColumn fx:id="dataNotariiColumn" minWidth="100.0" prefWidth="100.0" text="Data notării" />
+            <TableColumn fx:id="grupaColumn" minWidth="100.0" prefWidth="100.0" text="Grupă" />
+            <TableColumn fx:id="studentColumn" minWidth="200.0" prefWidth="200.0" text="Student" />
+         </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <TextField fx:id="gradeTextField" />
+          <Button mnemonicParsing="false" onAction="#onUpdateButton" text="Actualizează" />
+            <Button layoutX="163.0" layoutY="13.0" mnemonicParsing="false" onAction="#onDeleteButton" text="Șterge" />
+        </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>

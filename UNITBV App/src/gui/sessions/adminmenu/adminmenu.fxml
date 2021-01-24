@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sessions.adminmenu.AdminMenuController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Aplicație">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Închide aplicația" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ajutor">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Contact" />
+                        <MenuItem mnemonicParsing="false" text="Despre aplicație" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <bottom>
+        <HBox prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Utilizator: " />
+                <Label text="rares@unitbv.ro" />
+                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                <Label text="Drepturi: " />
+                <Label text="Administrator" />
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+            </padding>
+        </HBox>
+    </bottom>
+    <center>
+        <ScrollPane hbarPolicy="NEVER" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER">
+            <content>
+                <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" spacing="20.0">
+                    <children>
+                        <HBox alignment="CENTER">
+                            <children>
+                                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/followers.png" />
+                           </image></ImageView>
+                                <Button alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Listă utilizatori" HBox.hgrow="ALWAYS">
+                                    <HBox.margin>
+                                        <Insets left="40.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="100.0" prefWidth="400.0">
+                            <children>
+                                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/add.png" />
+                           </image></ImageView>
+                                <Button alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Adaugă utilizator" HBox.hgrow="ALWAYS">
+                                    <HBox.margin>
+                                        <Insets left="40.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/user.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Date personale" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/pencil.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Situație școlară personală" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/rank.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Clasamente stuenți" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/calculator.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Calculare șanse" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/students.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Listă studenți" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/add-user.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Adaugă student" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/test.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Catalog note" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/money.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Burse" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/physics.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Discipline predate" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/test.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Adaugă notă" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                           <image>
+                              <Image url="@../icons/research.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="CENTER" contentDisplay="CENTER" disable="true" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Note" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                    </children>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </VBox>
+            </content>
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+        </ScrollPane>
+    </center>
+</BorderPane>

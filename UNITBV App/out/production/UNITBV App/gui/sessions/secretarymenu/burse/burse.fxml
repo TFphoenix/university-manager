@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.sessions.secretarymenu.burse.BurseController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="grupaTableColumn" minWidth="100.0" prefWidth="100.0" text="Grupă" />
+          <TableColumn fx:id="burseMeritTableColumn" minWidth="150.0" prefWidth="150.0" text="Nr. burse de merit" />
+            <TableColumn fx:id="burseSpecialeTableColumn" minWidth="150.0" prefWidth="150.0" text="Nr. burse speciale" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ChoiceBox fx:id="grupeChoiceBox" prefWidth="100.0" />
+            <TextField fx:id="burseMeritTextField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+            <TextField fx:id="burseSpecialeTextField" layoutX="114.0" layoutY="13.0" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+          <Button mnemonicParsing="false" onAction="#onAddButton" text="Adaugă bursă" />
+            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#onDeleteButton" text="Șterge bursă" />
+        </items>
+      </ToolBar>
+   </bottom>
+   <top>
+      <HBox style="-fx-background-color: rgb(200,255,200);" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Burse de merit:" />
+            <Label fx:id="burseMeritLabel" text="Label">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Burse speciale:">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Text>
+            <Label fx:id="burseSpecialeLabel" layoutX="33.0" layoutY="10.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+</BorderPane>
